@@ -41,7 +41,10 @@ $(document).ready(function () {
 					// centerMode: true,
 				}
 			}
-		]
+		],
+		// mobileFirst: true,
+		// appendArrows: ('.wrapper'),
+		// appendDots: ('.wrapper'),
 	});
 	$('.sliderBig').slick({
 		arrows: false,
