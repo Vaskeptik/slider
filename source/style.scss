@@ -16,8 +16,7 @@ body {
 h1 {
 	position: relative;
 	text-align: center;
-	// padding-top: 100px;
-	margin: 64px auto;
+	margin: 20px 0px 30px 0px;
 	font-size: 64px;
 	text-transform: uppercase;
 	letter-spacing: 15px;
@@ -62,17 +61,32 @@ body {
 	height: 85px;
 	margin: -42.5px 0px 0px 0px;
 }
-.slider__item img {
+.slider .slider__item img {
 	max-height: 200px;
 }
-.slider__item {
-	opacity: 0.5;
-	text-align: center;
-	transition: all 0.3s ease 0s;
+// .slider__item {
+// 	opacity: 0.5;
+// 	text-align: center;
+// 	transition: all 0.3s ease 0s;
+// }
+.sliderBig .sliderBig__item img {
+	max-height: 450px;
 }
+.slider__item {
+	text-align: center;
+	padding: 0 5vw;
+}
+.sliderBig__item {
+	text-align: center;
+}
+.sliderBig {
+	margin-bottom: 48px;
+}
+// .slider__item.slick-center {
+// 	opacity: 1;
+// 	transition: all 0.3s ease 0s;
+// }
 .slider__item.slick-center {
-	opacity: 1;
-	transition: all 0.3s ease 0s;
 }
 /* Слайдер */
 .slick-slider {

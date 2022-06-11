@@ -21,8 +21,18 @@ $(document).ready(function () {
 		touchThreshhold: 5,
 		waitForAnimate: true,
 		centerMode: true,
-
-
+		variableWidth: true,
+		rows: 1,
+		// slidesPerRow: 3,
+		// vertical: true,
+		// verticalSwiping: true,
+		asNavFor: ".sliderBig",
+	});
+	$('.sliderBig').slick({
+		arrows: false,
+		dots: false,
+		fade: true,
+		asNavFor: ".slider",
 	});
 });
 
