@@ -68,15 +68,17 @@ body {
 
 .slider .slider__item img {
   max-height: 200px;
+  border-radius: 10px;
 }
 
 .sliderBig .sliderBig__item img {
   max-height: 450px;
+  border-radius: 10px;
 }
 
 .slider__item {
   text-align: center;
-  padding: 0 5vw;
+  padding: 0 auto;
 }
 
 .sliderBig__item {

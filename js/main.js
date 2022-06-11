@@ -18,15 +18,30 @@ $(document).ready(function () {
 		// draggable: true,
 		// swipe:true,
 		// touchMove:true,
-		touchThreshhold: 5,
+		// touchThreshhold: 5,
 		waitForAnimate: true,
-		centerMode: true,
-		variableWidth: true,
-		rows: 1,
+		// centerMode: true,
+		// variableWidth: true,
+		// rows: 1,
 		// slidesPerRow: 3,
 		// vertical: true,
 		// verticalSwiping: true,
 		asNavFor: ".sliderBig",
+		responsive: [
+			{
+				breakpoint: 1280,
+				settings: {
+					slidesToShow: 2,
+					// centerMode: true,
+				}
+			}, {
+				breakpoint: 930,
+				settings: {
+					slidesToShow: 1,
+					// centerMode: true,
+				}
+			}
+		]
 	});
 	$('.sliderBig').slick({
 		arrows: false,
