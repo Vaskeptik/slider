@@ -17,7 +17,7 @@ h1 {
 	position: relative;
 	text-align: center;
 	// padding-top: 100px;
-	margin: 100px auto;
+	margin: 64px auto;
 	font-size: 64px;
 	text-transform: uppercase;
 	letter-spacing: 15px;
@@ -32,12 +32,47 @@ body {
 .wrapper {
 	// display: flex;
 	// flex: 1 1 auto;
-	width: 100%;
+	max-width: 100%;
+	min-width: 500px;
 	height: 100%;
 	overflow: auto;
+	margin: 0 auto;
+	padding: 20px 100px;
+	overflow: auto;
+}
+
+.slider {
+	padding: 0px 50px;
+	position: relative;
+}
+.slider .slick-arrow.slick-prev {
+	background: url("../img/arrow2.png") 0 0 /100% no-repeat;
+	left: 0;
+}
+.slider .slick-arrow.slick-next {
+	right: 0;
+	background: url("../img/arrow.png") 0 0 /100% no-repeat;
+}
+.slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	font-size: 0;
+	width: 80px;
+	height: 85px;
+	margin: -42.5px 0px 0px 0px;
 }
 .slider__item img {
-	max-width: 500px;
+	max-height: 200px;
+}
+.slider__item {
+	opacity: 0.5;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+}
+.slider__item.slick-center {
+	opacity: 1;
+	transition: all 0.3s ease 0s;
 }
 /* Слайдер */
 .slick-slider {
@@ -50,9 +85,12 @@ body {
 }
 /* Ограничивающая оболочка */
 .slick-list {
+	overflow: hidden;
 }
 /* Лента слайдов */
 .slick-track {
+	display: flex;
+	align-items: flex-start;
 }
 /* Слайд */
 .slick-slide {
@@ -79,16 +117,32 @@ body {
 .slick-arrow.slick-next {
 }
 /* Стрелка не активная */
-.slick-arrow.slick-disabled {
+.slider .slick-arrow.slick-disabled {
+	opacity: 0.5;
 }
 /* Точки (булиты) */
-.slick-dots {
+.slider .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.slick-dots li {
-}
-/* Активная точка */
-.slick-dots li.slick-active {
+.slider .slick-dots li {
+	list-style: none;
+	margin: 20px 10px 0px 10px;
 }
 /* Элемент точки */
-.slick-dots li button {
+.slider .slick-dots li button {
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border-radius: 50%;
+}
+/* Активная точка */
+.slider .slick-dots li.slick-active button {
+	background-color: transparent;
+	border: 1px solid rgb(255, 255, 255);
+	width: 15px;
+	height: 15px;
+	transition: background-color 0.3s ease 0s;
 }
