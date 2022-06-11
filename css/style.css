@@ -71,22 +71,9 @@ body {
   border-radius: 10px;
 }
 
-.sliderBig .sliderBig__item img {
-  max-height: 450px;
-  border-radius: 10px;
-}
-
 .slider__item {
   text-align: center;
   padding: 0 auto;
-}
-
-.sliderBig__item {
-  text-align: center;
-}
-
-.sliderBig {
-  margin-bottom: 48px;
 }
 
 /* Слайдер */
@@ -155,4 +142,31 @@ body {
   height: 15px;
   -webkit-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
+}
+
+.link-add {
+  color: white;
+  margin: 0 20px;
+}
+
+.link-remove {
+  color: red;
+  margin: 0 20px;
+}
+
+.link-a {
+  margin: 30px 0px 0px 0px;
+  text-align: center;
+}
+
+.img-filter {
+  text-align: center;
+  display: inline-block;
+  color: #5f56e6;
+  padding: 10px;
+  border: 1px solid #5f56e6;
+  font-size: 24px;
+  letter-spacing: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
